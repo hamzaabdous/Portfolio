@@ -97,8 +97,7 @@ const Describtion = (props) => {
           ✌️
         </h1>
         <p className="pargh">
-          I'm a ~ {new Date().getFullYear() - 1998} year old Full-stack
-          Developer from Morocco. I am a junior full-stack developer from
+          I'm a ~ {new Date().getFullYear() - 1998} year old I am a junior full-stack developer from
           Morocco. Passionate about web and mobile development, and after 3
           years of experience in an agile dev team, during my experience, I have
           acquired many skills like React and React-native, This motivates me to

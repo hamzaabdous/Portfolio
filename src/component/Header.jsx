@@ -71,24 +71,8 @@ function Header() {
               /
             </Link>
           </li>
-          <li>
-            <Link
-              className="dark:md:hover:bg-slate-900 hover:bg-blue-700/5 rounded-full py-3 md:px-4"
-              to="/Talk"
-              onClick={RemoveNav}
-            >
-              /Talk
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="dark:md:hover:bg-slate-900 hover:bg-blue-700/5 rounded-full py-3 md:px-4"
-              to="/Blog"
-              onClick={RemoveNav}
-            >
-              /Blog
-            </Link>
-          </li>
+         
+
         </ul>
       </div>
       {/* <div className="flex justify-end items-center  ">
