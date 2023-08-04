@@ -9,6 +9,7 @@ import {
 import Home from './component/home/Home';
 import About from './component/about/About';
 import Talk from './component/talk/Talk';
+import Blog from './View/Blog/Blog';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Talk" element={<Talk />} />
-            <Route path="/Blog" element={<Talk />} />
+            <Route path="/Blog" element={<Blog />} />
           </Routes>
           <Footer />
         </BrowserRouter>

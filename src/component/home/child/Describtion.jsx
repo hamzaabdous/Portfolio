@@ -1,10 +1,10 @@
 import React from "react";
-
+import photo from "../../../assets/hamza abdous photo.png";
 const Describtion = (props) => {
   var colorIcon = "#000";
   return (
     <div className="py-4">
-      <div className="px-2 flex items-center space-x-4">
+      <div className="flex items-center px-2 space-x-4">
         <a
           href="https://github.com/hamzaabdous"
           target="_blank"
@@ -15,7 +15,7 @@ const Describtion = (props) => {
             version={1.0}
             viewBox="0 0 32 32"
             xmlSpace="preserve"
-            className="w-7 h-7  cursor-pointer transform hover:translate-y-1 duration-300 inline-flex items-center justify-center p-1 bg-indigo-500 rounded-md shadow-lg"
+            className="inline-flex items-center justify-center p-1 duration-300 transform bg-indigo-500 rounded-md shadow-lg cursor-pointer w-7 h-7 hover:translate-y-1"
           >
             <path
               clipRule="evenodd"
@@ -26,7 +26,7 @@ const Describtion = (props) => {
             />
           </svg>
         </a>
-        
+
         <a
           href="https://www.linkedin.com/in/hamza-abdous/"
           target="_blank"
@@ -38,7 +38,7 @@ const Describtion = (props) => {
             version="1.2"
             viewBox="0 0 24 24"
             xmlSpace="preserve"
-            className="w-7 h-7  cursor-pointer transform hover:translate-y-1 duration-300 inline-flex items-center justify-center p-1 bg-indigo-500 rounded-md shadow-lg"
+            className="inline-flex items-center justify-center p-1 duration-300 transform bg-indigo-500 rounded-md shadow-lg cursor-pointer w-7 h-7 hover:translate-y-1"
           >
             <path
               d="M8 19H5V9h3v10zm11 0h-3v-5.342c0-1.392-.496-2.085-1.479-2.085-.779 0-1.273.388-1.521 1.165V19h-3s.04-9 0-10h2.368l.183 2h.062c.615-1 1.598-1.678 2.946-1.678 1.025 0 1.854.285 2.487 1.001.637.717.954 1.679.954 3.03V19z"
@@ -60,10 +60,10 @@ const Describtion = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="px-3 py-1 cursor-pointer flex items-center  text-base font-bold text-slate-200 bg-slate-600 hover:bg-slate-700  rounded-full">
+          <div className="flex items-center px-3 py-1 text-base font-bold rounded-full cursor-pointer text-slate-200 bg-slate-600 hover:bg-slate-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-3 w-3 inline-block "
+              className="inline-block w-3 h-3 "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -83,26 +83,38 @@ const Describtion = (props) => {
             </svg>
             <div className="pl-2 sm:text-sm">
               Morooco , Rabat
-              <div className="w-2 h-2 ml-2 hidden bg-gray-400 dark:bg-white md:inline-block rounded-full overflow-hidden"></div>{" "}
+              <div className="hidden w-2 h-2 ml-2 overflow-hidden bg-gray-400 rounded-full dark:bg-white md:inline-block"></div>{" "}
             </div>
           </div>
         </a>
       </div>
-      <div className="box-border pt-2">
-        <h1 className="py-4 font-bold text-4xl">
-          Hello 👋, My name is {" "}
-          <span className="underline decoration-wavy underline-offset-8 text-indigo-500 dark:text-sky-100 decoration-indigo-700">
-            Hamza Abdous
-          </span>{" "}
-          ✌️
-        </h1>
-        <p className="pargh">
-          I'm a ~ {new Date().getFullYear() - 1998} year old I am a junior full-stack developer from
-          Morocco. Passionate about web and mobile development, and after 3
-          years of experience in an agile dev team, during my experience, I have
-          acquired many skills like React and React-native, This motivates me to
-          look for more challenges to deliver a great user experience
-        </p>
+
+      <div className="grid grid-cols-3 grid-rows-1 gap-2">
+        <div className="box-border col-start-1 col-end-3 pt-1 ">
+          <h1 className="py-4 text-4xl font-bold">
+            Hello 👋, My name is{" "}
+            <span className="text-indigo-500 underline decoration-wavy underline-offset-8 dark:text-sky-100 decoration-indigo-700">
+              Hamza Abdous
+            </span>{" "}
+            ✌️
+          </h1>
+          <p className="pargh">
+            I'm a ~ {new Date().getFullYear() - 1998} year old I am a junior
+            full-stack developer from Morocco. Passionate about web and mobile
+            development, and after 3 years of experience in an agile dev team,
+            during my experience, I have acquired many skills like React and
+            React-native, This motivates me to look for more challenges to
+            deliver a great user experience
+          </p>
+        </div>
+        <div className="col-start-3">
+          <img
+            src={photo}
+            alt="my image"
+            width={350}
+            height={350}
+          />
+        </div>
       </div>
     </div>
   );
